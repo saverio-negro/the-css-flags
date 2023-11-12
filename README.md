@@ -1,6 +1,6 @@
 # The CSS Flags
 
-<img src="./assets/images/the-css-flags-picture.png" width="50%" height="50%"/>
+<img src="./assets/images/the-css-flags-picture.webp" width="50%" height="50%"/>
 
 <p>Credits: <a href=""></a></p>
 
