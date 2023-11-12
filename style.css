@@ -1,0 +1,438 @@
+body {
+    background-color: #F5E8C7;
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #363062;
+    border: solid 1px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: 300px;
+}
+
+.box {
+    height: 300px;
+    border: solid 1px;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    margin: 10px 0px 0px 0px;
+}
+
+.flag {
+    width: 80%;
+    height: 55%;
+}
+
+#flag-1 {
+    background-color: #363062;
+    position: relative;
+}
+
+#laos-flag {
+    background-color: #cd1126;
+    border: solid 1px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+#laos-flag > div {
+    background-color: #002868;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    height: 50%;
+}
+
+#laos-flag > div > div {
+    background-color: white;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    top: 12.5%;
+    left: 39%;
+}
+
+#flag-2 {
+    background-color: #435585;
+    position: relative;
+}
+
+#germany-flag {
+    position: absolute;
+    border: solid 1px;
+    top: 20%;
+    left: 10%;
+}
+
+#germany-flag #black-strip {
+    background-color: black;
+    height: 33.3%;
+}
+
+#germany-flag #red-strip {
+    background-color: #dd0000;
+    height: 33.3%;
+}
+
+#germany-flag #golden-strip {
+    background-color: #ffce00;
+    height: 33.3%;
+}
+
+#flag-3 {
+    position: relative;
+    background-color: #363062;
+}
+
+#italy-flag {
+    position: absolute;
+    border: solid 1px;
+    top: 20%;
+    left: 10%;
+}
+
+#italy-flag #green-strip {
+    background-color: #039344;
+    position: absolute;
+    width: 33.3%;
+    height: 100%;
+}
+
+#italy-flag #white-strip {
+    background-color: white;
+    position: absolute;
+    width: 33.3%;
+    height: 100%;
+    left: 33.3%;
+}
+
+#italy-flag #red-strip {
+    background-color: #d02634;
+    position: absolute;
+    width: 33.3%;
+    height: 100%;
+    left: 66.6%;
+}
+
+#flag-4 {
+    position: relative;
+    background-color: #435585;
+}
+
+#greece-flag {
+    position: absolute;
+    border: solid 1px;
+    top: 20%;
+    left: 10%;
+}
+
+#greece-flag .azure-strip {
+    background-color: #0c5eaf;
+    width: 100%;
+    height: 11.11%;
+}
+
+#greece-flag .white-strip {
+    background-color: white;
+    width: 100%;
+    height: 11.11%;
+}
+
+#greece-flag {
+    border: solid 1px;
+}
+
+#greece-flag > .square {
+    position: absolute;
+    background-color: #0c5eaf;
+    width: 38%;
+    height: 55.5%;
+    top: 0px;
+}
+
+#greece-flag > .square > .vertical-strip {
+    position: absolute;
+    background-color: white;
+    width: 21%;
+    height: 100%;
+    top: 0%;
+    left: 38%;
+}
+
+#greece-flag > .square > .horizontal-strip {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 18.5%;
+    top: 40.5%;
+}
+
+#flag-5 {
+    background-color: #363062;
+    position: relative;
+}
+
+#japan-flag {
+    position: absolute;
+    background-color: white;
+    border: solid 1px;
+    top: 20%;
+    left: 10%;
+}
+
+#japan-flag > div {
+    position: absolute;
+    background-color: #bc002c;
+    border-radius: 50%;
+    width: 35%;
+    height: 50%;
+    top: 25%;
+    left: 32%;
+}
+
+#flag-6 {
+    background-color: #435585;
+    position: relative;
+}
+
+#united-states-flag {
+    position: absolute;
+    border: solid 1px;
+    top: 20%;
+    left: 10%;
+}
+
+#united-states-flag > .red-strip {
+    background-color: #b22234;
+    width: 100%;
+    height: 7.692%;
+}
+
+#united-states-flag > .white-strip {
+    background-color: white;
+    width: 100%;
+    height: 7.692%;
+}
+
+#united-states-flag > .square-container {
+    position: absolute;
+    padding: 2.5%; 
+    background-color: #3b3a6c;
+    top: 0px;
+    width: 38%;
+    height: 44.5%;
+}
+
+#united-states-flag > .square-container {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+}
+
+.star {
+    --star-color:white;
+    margin: auto;
+    position: relative;
+    width: 0px;
+    height: 0px;
+    font-size: 30%;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid var(--star-color);
+    border-left: 1em solid transparent;
+    transform: rotate(35deg);
+   }
+   
+.star:before {
+    border-bottom: 0.8em solid var(--star-color);
+    border-left: 0.3em solid transparent;
+    border-right: 0.3em solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -0.45em;
+    left: -0.65em;
+    display: block;
+    content:"";
+    transform: rotate(-35deg);
+}
+   
+.star:after {
+    position: absolute;
+    display: block;
+    top: 0.03em;
+    left: -1.05em;
+    width: 0;
+    height: 0;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid var(--star-color);
+    border-left: 1em solid transparent;
+    transform: rotate(-70deg);
+    content:"";
+}
+
+#flag-7 {
+    position: relative;
+    background-color: #363062;
+}
+
+#iceland-flag {
+    position: absolute;
+    background-color: #00519d;
+    border: solid 1px;
+    top: 20%;
+    left: 10%;
+}
+
+#iceland-flag > .horizontal-strip {
+    background-color: white;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+}
+
+#iceland-flag > .vertical-strip {
+    background-color: white;
+    width: 12%;
+    height: 100%;
+    position: absolute;
+    left: 28%;
+}
+
+#iceland-flag > .horizontal-strip > .horizontal-red-strip {
+    background-color: #dd2a35;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    height: 50%;
+    z-index: 2;
+}
+
+#iceland-flag > .vertical-strip > .vertical-red-strip {
+    background-color: #dd2a35;
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+}
+
+#flag-8 {
+    background-color: #435585;
+    position: relative;
+}
+
+#cuba-flag {
+    position: absolute;
+    border: solid 1px;
+    top: 20%;
+    left: 10%;
+}
+
+#cuba-flag > .top-blue-strip {
+    background-color: #002a8f;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 21%;
+
+}
+
+#cuba-flag > .bottom-blue-strip {
+    background-color: #002a8f;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 21%;
+}
+
+#cuba-flag > .white-strip {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 58%;
+    top: 21%;
+}
+
+#cuba-flag > .white-strip > .blue-strip {
+    background-color: #002a8f;
+    position: absolute;
+    width: 100%;
+    height: 32%;
+    top: 34%;
+}
+
+#cuba-flag > .red-triangle {
+    position: relative;
+    background: #cb1615;
+    width: 64%;
+    height: 80%;
+    top: 10%;
+    left: -6.4%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(90deg);
+}
+
+#cuba-flag > .star {
+    --star-color:white;
+    margin: auto;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid var(--star-color);
+    border-left: 1em solid transparent;
+    transform: rotate(35deg);
+   }
+   
+#cuba-flag > .star:before {
+    border-bottom: 0.8em solid var(--star-color);
+    border-left: 0.3em solid transparent;
+    border-right: 0.3em solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -0.45em;
+    left: -0.65em;
+    display: block;
+    content:"";
+    transform: rotate(-35deg);
+}
+   
+#cuba-flag > .star:after {
+    position: absolute;
+    display: block;
+    top: 0.03em;
+    left: -1.05em;
+    width: 0;
+    height: 0;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid var(--star-color);
+    border-left: 1em solid transparent;
+    transform: rotate(-70deg);
+    content:"";
+}
+
+#cuba-flag > .star {
+    top: 45%;
+    left: 6%;
+    font-size: 150%;
+}
+
+
+
+
+
