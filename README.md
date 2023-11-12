@@ -1,6 +1,6 @@
 # The CSS Flags
 
-<img style="border: solid 1px white;" src="./assets/images/the-css-flags-picture.webp" width="60%" height="80%"/>
+<img src="./assets/images/the-css-flags-picture.webp" width="60%" height="80%"/>
 
 <p>Image Source: <a href="https://www.istockphoto.com/">iStockPhoto.com</a></p>
 
