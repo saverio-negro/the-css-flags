@@ -2,7 +2,7 @@
 
 <img src="./assets/images/the-css-flags-picture.webp" width="60%" height="80%"/>
 
-<p>Credits: <a href=""></a></p>
+<p>Image Source: <a href="https://www.istockphoto.com/">iStockPhoto.com</a></p>
 
 <p>The CSS Flags is a very simple project that I worked on to practice my CSS skills, and it was quite a lot of fun, if I'm being honest.</p>
 
